@@ -1,41 +1,39 @@
 * {
-    box-sizing: border-box;
+    text-decoration: none;
 }
 
-.container {
-    background-color: #9400d3;
-    /* height: auto; */
-}
+/* CABEÇALHO */
 
 header {
     background-color: #8102b8;
-    /* width: auto;
-    height: auto; */
-    margin: 0 auto;
+
+}
+main {
+    background-color: #9400d3;
+    
 }
 
 .cabecalho {
     display: flex;
-    max-width: 940px;
-    margin: 0 auto;
-    justify-content:space-around; 
     align-items: center;
+    justify-content:space-around; 
     padding: 5px 0 10px;
 }
 
 .logo img {
-    width: 60px;
+    width: 70px;
 }
 
 .redes-sociais {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     gap: 5px;
 }
 
 .texto-cabecalho {
     font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     padding:  30px 0 0;
 }
@@ -48,20 +46,23 @@ header {
     height: 30px;
 }
 
+/* CONTEÚDO */
+
 .conteudo {
     display: flex;
     max-width: 940px;
-    margin: 0 auto;
-    justify-content: space-around;
     align-items: center;
-
+    justify-content: space-around;
+    margin: 0 auto;
+    gap: 50px
+    
 }
 
 .conteudo-texto {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
-    margin-right: 50px;
+    align-items:flex-start
+    
 }
 
 h1 {
@@ -69,6 +70,7 @@ h1 {
     text-transform: uppercase;
     font-size: 26px;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h2 {
@@ -76,6 +78,7 @@ h2 {
     font-size: 20px;
     margin: 10px 0 20px;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 p {
@@ -89,16 +92,13 @@ p {
 
 h3 {
     border: 1px solid white;
+    border-radius: 5px;
     padding: 4px 20px;
     background-color: #ffffff;
     color: #9400d3;
     font-size: 15px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-}
-
-.conteudo-texto a {
-    text-decoration: none;
 }
 
 h3:hover {
@@ -114,15 +114,36 @@ h3:hover {
     padding: 7px;
 }
 
-.copyright {
+.rodape {
     background-color: #8102b8;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    padding: 20px 0;
+    padding: 6px;
+
 }
 
-.formulario {
-    display: flex;
-    flex-direction: column;
+.copyright {
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 960px) {
+    .conteudo {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .conteudo {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .conteudo-texto{
+        text-align: center;
+    }
+}
+
+
+
+

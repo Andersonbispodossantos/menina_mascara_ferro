@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color:  #9400d3;
+}
+
+.cadastro {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items:center;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: #7000a0;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px #00000056;
+}
+
+.titulo-cadastro {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12;
+    color: #ffffff;
+    padding-top: 10px;
+    
+} 
+
+.input-area {
+    width: 350px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #a300e9;
+    color: #ffffff;
+    font-size: 12px;
+    box-shadow: 0 10px 30px #00000056;
+    box-sizing: border-box;
+}
+
+.botao {
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+    color:#9400d3;
+    width: 80px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background: #9400d3;
+    color:#ffffff;
+    border: 1px solid #ffffff;
+}
